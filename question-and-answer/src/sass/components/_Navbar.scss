@@ -1,0 +1,11 @@
+.Navbar {
+
+    &__item {
+        margin: 2rem 0;
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+    
+}
