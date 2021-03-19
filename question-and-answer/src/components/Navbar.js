@@ -5,15 +5,15 @@ const Navbar = ({filterQuestions}) => {
         <div className="Navbar">
             <button className="Navbar__item" 
                     onClick={() => filterQuestions('all')}>
-                    all
+                    All
             </button>
             <button className="Navbar__item" 
                     onClick={() => filterQuestions('sport')}>
-                    sport
+                    Sport
             </button>
             <button className="Navbar__item" 
                     onClick={() => filterQuestions('cuisine')}>
-                    cuisine
+                    Cuisine
             </button>
          
         </div>

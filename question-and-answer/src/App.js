@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
 import './sass/main.scss';
-import Header from './components/Header'
 import Footer from './components/Footer'
 import Questions from './components/Questions'
 import data from './data'
@@ -15,13 +14,12 @@ function App() {
       return;
     }
 
-    const newQuestions = questions.filter((question) => question.category === category);
+    const newQuestions = data.filter((question) => question.category === category);
     setQuestions(newQuestions)
   }
 
   return (
     <div className="App">
-      <Header />
       <Questions questions={questions} filterQuestions={filterQuestions} />
       <Footer />
     </div>

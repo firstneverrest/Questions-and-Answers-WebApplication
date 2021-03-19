@@ -1,19 +1,36 @@
 .Questions {
     width: 100rem;
     min-height: 60rem;
-    background-color: $color-white;
-    border-radius: 1rem;
-    margin: 2rem auto;
+    border-radius: 50px;
+    background: #40E0D0;
+    margin: 4rem auto;
     padding: 2rem 3rem;
+    text-align: center;
+    box-shadow:  20px 20px 60px #36beb1,
+    -20px -20px 60px #4affef;
 
-    // display: flex;
+    &__header {
+        position: relative;
+
+        &::after {
+            content: "";
+            height: 3px;
+            width: 20%;
+            background-color: $color-secondary;
+
+            position: absolute;
+            bottom: -18%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
 
     &__question {
-        margin-left: 3rem;
+        margin: 0 2.5rem;
     }
 
     &__navigation {
         display: flex;
-          
+        justify-content: center;
     }
 }

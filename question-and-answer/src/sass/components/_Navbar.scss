@@ -1,11 +1,25 @@
 .Navbar {
 
     &__item {
+        color: $color-secondary;
+        font-family: inherit;
+        font-weight: 600;
+        font-size: 1.6rem;
+        background-color: $color-primary;
         margin: 2rem 0;
+        padding: .5rem 1.5rem;
+        outline: none;
+        border: 1.7px solid $color-secondary;
+        cursor: pointer;
 
         &:not(:last-child) {
             margin-right: 2rem;
         }
+        
+        &:hover,
+        &:focus {
+            background-color: $color-secondary;
+            color: $color-primary;
+        }
     }
-    
 }
