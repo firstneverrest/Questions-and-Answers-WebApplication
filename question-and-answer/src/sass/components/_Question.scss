@@ -3,13 +3,17 @@
     text-align: start;
     position: relative;
 
+    @media only screen and (max-width: $bp-small) {
+        margin-bottom: 3rem;
+    }
+    
     &__header {
         display: flex;
         justify-content: space-between;
     }
 
     &__title {
-
+        font-weight: 500;
     }
 
     &__button {
