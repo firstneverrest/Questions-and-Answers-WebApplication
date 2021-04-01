@@ -1,21 +1,35 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
+
 import { FaAngleUp, FaAngleDown } from "react-icons/fa";
+// import { CSSTransition } from "react-transition-group";
 
-const Question = ({title, info}) => {
-    const [showInfo, setShowInfo] = useState(false);
-    let iconStyles = { height: "100%", width: "50%", color: "white"};
+const Question = ({ title, info }) => {
+  const [showInfo, setShowInfo] = useState(false);
 
-    return (
-        <article className="Question">
-            <header className="Question__header">
-                <h4 className="Question__title">{title}</h4>
-                <button className="Question__button" onClick={() => setShowInfo(!showInfo)}>
-                    {showInfo ? <FaAngleUp style={iconStyles}/> : <FaAngleDown style={iconStyles}/>}
-                </button>                
-            </header>
-            {showInfo ? <p className="Question__info">{info}</p> : null}
-        </article>
-    )
-}
+  let iconStyles = { height: "100%", width: "50%", color: "white" };
 
-export default Question
+  return (
+    <article className="Question">
+      <header className="Question__header">
+        <h4 className="Question__title">{title}</h4>
+        <button
+          className={`${
+            showInfo ? "Question__button-normal" : "Question__button-active"
+          }`}
+          onClick={() => setShowInfo(!showInfo)}
+        >
+          <FaAngleUp style={iconStyles} />
+        </button>
+      </header>
+      <div
+        className={`${
+          showInfo ? "Question__info-active" : "Question__info-hide"
+        }`}
+      >
+        <p>{info}</p>
+      </div>
+    </article>
+  );
+};
+
+export default Question;

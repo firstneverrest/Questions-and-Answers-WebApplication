@@ -1,40 +1,69 @@
 .Question {
-    margin-bottom: 2.2rem;
-    text-align: start;
-    position: relative;
+  margin-bottom: 2.2rem;
+  text-align: start;
+  position: relative;
 
-    @media only screen and (max-width: $bp-small) {
-        margin-bottom: 3rem;
-    }
-    
-    &__header {
-        display: flex;
-        justify-content: space-between;
+  @media only screen and (max-width: $bp-small) {
+    margin-bottom: 3rem;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-weight: 500;
+  }
+
+  &__button {
+    &-normal {
+      width: 3rem;
+      height: 3rem;
+      background: $color-primary;
+      border: none;
+      outline: none;
+      transition: transform 0.5s;
+      cursor: pointer;
+      transform: rotate(0);
     }
 
-    &__title {
-        font-weight: 500;
+    &-active {
+      width: 3rem;
+      height: 3rem;
+      background: $color-primary;
+      border: none;
+      outline: none;
+      transition: transform 0.5s;
+      cursor: pointer;
+      transform: rotate(180deg);
+    }
+  }
+
+  &__info {
+    &-hide {
+      margin-top: 0.5rem;
+      font-weight: 400;
+      opacity: 0;
+      height: 0;
+      transition: height 0.5s, opacity 0.3s;
     }
 
-    &__button {
-        width: 3rem;
-        height: 3rem;
-        background: $color-primary;
-        border: none;
-        outline: none;
+    &-active {
+      margin-top: 0.5rem;
+      font-weight: 400;
+      opacity: 1;
+      height: 6rem;
+      transition: height 0.5s, opacity 0.5s;
     }
+  }
 
-    &__info {
-        margin-top: .5rem;
-        font-weight: 400;
-    }
-
-    &::after {
-        content: "";
-        height: 1px;
-        width: 100%;
-        background-color: $color-white;
-        position: absolute;
-        bottom: -18%;
-    }
+  &::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: $color-white;
+    position: absolute;
+    bottom: -18%;
+  }
 }

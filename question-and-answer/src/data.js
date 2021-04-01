@@ -38,7 +38,7 @@ const questions = [
         id: 6,
         title: "What's my favorite cuisine",
         category: "cuisine",
-        info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate eum cupiditate aliquam, mollitia reiciendis quos, odio nemo placeat in laboriosam nobis deleniti adipisci nam quaerat consectetur similique molestiae porro animi."
+        info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit."
     }
 ]
 
