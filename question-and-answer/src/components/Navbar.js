@@ -9,10 +9,7 @@ const Navbar = ({ filterQuestions }) => {
       <button className="Navbar__item" onClick={() => filterQuestions("sport")}>
         Sport
       </button>
-      <button
-        className="Navbar__item"
-        onClick={() => filterQuestions("cuisine")}
-      >
+      <button className="Navbar__item" onClick={() => filterQuestions("cuisine")}>
         Cuisine
       </button>
     </div>

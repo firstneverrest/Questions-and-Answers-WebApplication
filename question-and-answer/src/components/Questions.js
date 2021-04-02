@@ -12,8 +12,8 @@ const Questions = ({ questions, filterQuestions }) => {
       </div>
 
       <div className="Questions__question">
-        {questions.map((question) => {
-          return <Question key={question.id} {...question} />;
+        {questions.map((question, index) => {
+          return <Question key={index} {...question} />;
         })}
       </div>
     </div>
