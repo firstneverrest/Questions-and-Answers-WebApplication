@@ -6,11 +6,14 @@ const Navbar = ({ filterQuestions }) => {
       <button className="Navbar__item" onClick={() => filterQuestions("all")}>
         All
       </button>
+      <button className="Navbar__item" onClick={() => filterQuestions("profile")}>
+        Profile
+      </button>
       <button className="Navbar__item" onClick={() => filterQuestions("sport")}>
         Sport
       </button>
-      <button className="Navbar__item" onClick={() => filterQuestions("cuisine")}>
-        Cuisine
+      <button className="Navbar__item" onClick={() => filterQuestions("food")}>
+        Food
       </button>
     </div>
   );

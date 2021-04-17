@@ -14,6 +14,7 @@
 
   &__title {
     font-weight: 500;
+    font-size: 2.2rem;
   }
 
   &__button {
@@ -51,6 +52,10 @@
 
     &-active {
       margin-top: 0.5rem;
+      width: 100ch;
+      font-size: 1.7rem;
+      line-height: 2.3rem;
+      letter-spacing: .8px;
       font-weight: 400;
       opacity: 1;
       height: 6rem;

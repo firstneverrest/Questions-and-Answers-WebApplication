@@ -6,7 +6,7 @@ import Navbar from "./Navbar";
 const Questions = ({ questions, filterQuestions }) => {
   return (
     <div className="Questions">
-      <h2 className="Questions__header">Questions and Answers about me</h2>
+      <h2 className="Questions__header">Questions and Answers About Me</h2>
       <div className="Questions__navigation">
         <Navbar filterQuestions={filterQuestions} />
       </div>
