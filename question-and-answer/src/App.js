@@ -22,23 +22,11 @@ function App() {
   // fetch articles from realtime firebase database
   const fetchQA = () => {
     try {
-      // addQuestionAnswer("Activity");
       readQuestionAnswer();
     } catch (error) {
       return <Error />;
     }
   };
-
-  // const addQuestionAnswer = (category) => {
-  //   const ref = firebase.database().ref(category);
-  //   const questionAnswer = {
-  //     question: "Do you have some recommended food for the tourist?",
-  //   answer: "I would recommend my favorite food - Tom Yum Goong (Spicy Shrimp Soup) - but in a less spicy favor because some foreigner don't similar with spicy (it can make you feel uncomfortable). Moreover, Thailand's dessert is absolutely tasty as well. I would recommend mango sticky rice (very good combination), and I'm sure that you will love it!",
-  //   category: "food",
-  //   };
-
-  //   ref.push(questionAnswer);
-  // };
 
   const readQuestionAnswer = () => {
     const ref = firebase.database().ref("Activity");
@@ -65,7 +53,7 @@ function App() {
     setQuestions(newQuestions);
   };
 
-  // if this app is loading, it will appear loading screen until loading is finish
+  // if this app is loading, it will appear loading screen until loading is finished
   if (loading) {
     return <Loading />;
   }

@@ -14,7 +14,7 @@
 
   &__title {
     font-weight: 500;
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   &__button {
@@ -52,14 +52,27 @@
 
     &-active {
       margin-top: 0.5rem;
-      width: 100ch;
-      font-size: 1.7rem;
+      width: 95%;
       line-height: 2.3rem;
       letter-spacing: .8px;
       font-weight: 400;
       opacity: 1;
       height: 6rem;
       transition: height 0.5s, opacity 0.5s;
+
+      @media only screen and (max-width: $bp-medium) {
+        line-height: 2rem;
+        letter-spacing: .7px; 
+        font-size: 1.4rem;
+      }
+      @media only screen and (max-width: $bp-small) {
+        letter-spacing: .6px; 
+        font-size: 1.3rem;
+      }
+      @media only screen and (max-width: $bp-smallest) {
+        width: 90%;
+        font-size: 1.2rem;
+      }
     }
   }
 

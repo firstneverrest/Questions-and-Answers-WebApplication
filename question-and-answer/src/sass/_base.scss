@@ -1,60 +1,62 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    // this defines what 1rem is
-    font-size: 62.5%; 
-    scroll-behavior: smooth;
+  // this defines what 1rem is
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 
-    @media only screen and (max-width: $bp-large) {
-        font-size: 55%;
-    }
+  @media only screen and (max-width: $bp-large) {
+    font-size: 55%;
+  }
 
-    @media only screen and (max-width: $bp-medium) {
-        font-size: 45%;
-    }
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 45%;
+  }
 
-    @media only screen and (max-width: $bp-small) {
-        font-size: 40%;
-    }
+  @media only screen and (max-width: $bp-small) {
+    font-size: 40%;
+  }
 
-    @media only screen and (max-width: $bp-smallest) {
-        font-size: 35%;
-    }
-    
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 35%;
+  }
 }
 
 body {
-    box-sizing: border-box;
-    background-color: $color-primary;
+  box-sizing: border-box;
+  background-color: $color-primary;
 }
 
 // scrollbar
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: $color-primary; 
+  background: $color-primary;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: $color-white; 
-    border-radius: 15px;
+  background: $color-white;
+  border-radius: 15px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+  background: #555;
 }
 
-
-
+// text selection
+::selection {
+  color: $color-primary;
+  background: $color-white;
+}
