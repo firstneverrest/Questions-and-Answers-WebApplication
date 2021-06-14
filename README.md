@@ -1,5 +1,5 @@
 # Questions-and-Answers-WebApplication
-![image](./question-and-answer/src/img/Question-Answer-thumbnail.jpg)
+![image](./question-and-answer/src/img/question-answer-thumbnail.jpg)
 
 Questions and Answers web application is related to Q & A about myself which make you know me little better. I used neumorphism design - similar with skeuomorphism- to design this website and I really like it. This also my first project used Firebase to store data and treat as a realtime database as well as Firebase web hosting. Firebase has many of features to manage back-end site such as database and web hosting. Firebase is easy to use with just a few learning about it. So, I really recommend you to try this amazing tools from Google. This web application displays questions and answers about me with classification of question types which are All, Profile, Sport and Food. Each type of question has 2 questions and answers. So, I hope you enjoy with my website!
 
